@@ -7,7 +7,8 @@ let option = 0;
 const clients = new Client();
 
 do{
-    console.log('[1] Cadastro de Pessoa Física\n[2] Cadastro de Pessoa Jurídica\n[3] Sair')
+    console.log('[1] Cadastro de Pessoa Física\n[2] Cadastro de Pessoa Jurídica\n[3] Sair\n')
+    option = Number(prompt('>>'))
 
     if(option === 1){
         //Cadastro Pessoa Física
