@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Employee_1 = require("./Employee");
+console.clear();
+console.log('=========== Funcionário ===========\n');
+var employee1 = new Employee_1.Employee();
+employee1.name = 'José Roberto';
+employee1.currentPosition = 'Auxiliar Administrativo';
+employee1.salary = 1700;
+console.log("Nome: ".concat(employee1.name, "\nCargo Atual: ").concat(employee1.currentPosition));
+employee1.updateSalary(300);

@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var plane_1 = require("./plane");
+var prompt = require('prompt-sync');
+var accentsText = prompt('Quantidade de Acentos:');
+var accents = accentsText;
+var airline = prompt('Companhia Aérea: ');
+var airplaneModel = prompt('Modelo do Avião: ');
+var airplaneWeight = prompt('Peso do Avião: ');
+var numberOfPassengers = prompt('Número de Passageiros: ');
+var flight1 = new plane_1.Plane({ airline: airline, airplaneModel: airplaneModel, airplaneWeight: airplaneWeight, accents: accents, numberOfPassengers: numberOfPassengers });
+console.clear();
+console.log("============Confirme os seus dados de viagem============\nQuantidade de Acentos: ".concat(flight1.accents, "\nCompanhia A\u00E9rea: ").concat(flight1.airline, "\nModelo do Avi\u00E3o: ").concat(flight1.airplaneModel, "\nPeso do Avi\u00E3o: ").concat(flight1.airplaneWeight, "\nN\u00FAmero de Passageiros: ").concat(flight1.numberOfPassengers, "\n"));
+console.log(flight1.toFly());

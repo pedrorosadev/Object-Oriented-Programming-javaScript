@@ -1,7 +1,8 @@
 import {Plane} from './plane';
 const prompt = require('prompt-sync');
 
-const accents = Number(prompt('Quantidade de Acentos:'));
+const accentsText = prompt('Quantidade de Acentos:');
+const accents = accentsText;
 const airline = prompt('Companhia Aérea: ');
 const airplaneModel = prompt('Modelo do Avião: ');
 const airplaneWeight = prompt('Peso do Avião: ');
